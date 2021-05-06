@@ -9,15 +9,17 @@ const Game = () => {
   const [bestScore, setBestScore] = useState(0);
 
   return (
-    <div className="CardDisplay">
-      {currentCards.map((card) => {
-        return (
-          <div key={`unicorn-${card.id}`}>
-            <img src={card.name}></img>
-          </div>
-        );
-      })}
+    <div className="Game">
       <Scoreboard currentScore={currentScore} bestScore={bestScore} />
+      <div className="cardDisplay">
+        {currentCards.map((card) => {
+          return (
+            <div key={`unicorn-${card.id}`} className="card">
+              <img src={card.name}></img>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

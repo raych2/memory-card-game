@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  margin: 20px auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.Game {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+}
+.cardDisplay {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);;
+    grid-gap: 10px;
+}
+.card {
+    margin: 0 auto;
+    background-color: #d9d9d9;
+    padding: 5px;
+    border-radius: 5px;
+}
