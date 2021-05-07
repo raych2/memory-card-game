@@ -15,7 +15,7 @@ const Game = () => {
         {currentCards.map((card) => {
           return (
             <div key={`unicorn-${card.id}`} className="card">
-              <img src={card.name}></img>
+              <img src={card.name} alt={card.text}></img>
             </div>
           );
         })}
