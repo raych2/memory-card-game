@@ -8,9 +8,17 @@ const Game = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
-  const addToClickedCards = (id) => {
+  const handleClickedCards = (id) => {
     setClickedCards([...clickedCards, currentCards[id].id]);
-    shuffleCards();
+    if (clickedCards.includes(currentCards[id].id)) {
+      setBestScore(currentScore);
+      setCurrentScore(0);
+      setClickedCards([]);
+    } else {
+      shuffleCards();
+      setCurrentScore(currentScore + 1);
+      setBestScore(bestScore);
+    }
   };
 
   const shuffleCards = () => {
@@ -32,7 +40,7 @@ const Game = () => {
             <div
               key={`unicorn-${card.id}`}
               className="card"
-              onClick={() => addToClickedCards(index)}
+              onClick={() => handleClickedCards(index)}
             >
               <img src={card.name} alt={card.text}></img>
             </div>
