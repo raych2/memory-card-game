@@ -7,9 +7,9 @@ const Scoreboard = (props) => {
 
   return (
     <div className="Scoreboard">
-      <div>Current Score: {currentScore}</div>
-      <div>Best Score: {bestScore}</div>
-      <div>{gameOver}</div>
+      <div className="score">Current Score: {currentScore}</div>
+      <div className="score">Best Score: {bestScore}</div>
+      <div className="announcement">{gameOver}</div>
     </div>
   );
 };

@@ -12,8 +12,8 @@ const Game = () => {
   const handleClickedCards = (id) => {
     setClickedCards([...clickedCards, currentCards[id].id]);
     if (clickedCards.includes(currentCards[id].id)) {
-      setGameOver(`Game Over! You chose ${currentCards[id].text} twice!`);
-      if(currentScore > bestScore) {
+      setGameOver(`Game Over! You chose the ${currentCards[id].text} twice!`);
+      if (currentScore > bestScore) {
         setBestScore(currentScore);
       }
       setCurrentScore(0);
@@ -37,7 +37,11 @@ const Game = () => {
 
   return (
     <div className="Game">
-      <Scoreboard currentScore={currentScore} bestScore={bestScore} gameOver={gameOver} />
+      <Scoreboard
+        currentScore={currentScore}
+        bestScore={bestScore}
+        gameOver={gameOver}
+      />
       <div className="cardDisplay">
         {currentCards.map((card, index) => {
           return (
