@@ -7,17 +7,21 @@ const Game = () => {
   const [clickedCards, setClickedCards] = useState([]);
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [gameOver, setGameOver] = useState("");
 
   const handleClickedCards = (id) => {
     setClickedCards([...clickedCards, currentCards[id].id]);
     if (clickedCards.includes(currentCards[id].id)) {
-      setBestScore(currentScore);
+      setGameOver(`Game Over! You chose ${currentCards[id].text} twice!`);
+      if(currentScore > bestScore) {
+        setBestScore(currentScore);
+      }
       setCurrentScore(0);
       setClickedCards([]);
     } else {
+      setGameOver("Keep playing to beat your best score!");
       shuffleCards();
       setCurrentScore(currentScore + 1);
-      setBestScore(bestScore);
     }
   };
 
@@ -33,7 +37,7 @@ const Game = () => {
 
   return (
     <div className="Game">
-      <Scoreboard currentScore={currentScore} bestScore={bestScore} />
+      <Scoreboard currentScore={currentScore} bestScore={bestScore} gameOver={gameOver} />
       <div className="cardDisplay">
         {currentCards.map((card, index) => {
           return (
