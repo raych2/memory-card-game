@@ -9,6 +9,17 @@
 .App {
   margin: 20px auto;
   font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+}
+.Scoreboard {
+  padding: 20px 0;
+}
+.score {
+  padding-bottom: 5px;
+  color: #CAFFBF;
+}
+.announcement {
+  font-size: 1.25em;
 }
 .Game {
     margin: 0 auto;
@@ -17,7 +28,7 @@
 }
 .cardDisplay {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 .card {
