@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.4537fb43.chunk.css",
+    "main.js": "/memory-card-game/static/js/main.65b201b9.chunk.js",
+    "main.js.map": "/memory-card-game/static/js/main.65b201b9.chunk.js.map",
+    "runtime-main.js": "/memory-card-game/static/js/runtime-main.4b80d8e1.js",
+    "runtime-main.js.map": "/memory-card-game/static/js/runtime-main.4b80d8e1.js.map",
+    "static/js/2.1c6e6ce0.chunk.js": "/memory-card-game/static/js/2.1c6e6ce0.chunk.js",
+    "static/js/2.1c6e6ce0.chunk.js.map": "/memory-card-game/static/js/2.1c6e6ce0.chunk.js.map",
+    "index.html": "/memory-card-game/index.html",
+    "static/css/main.4537fb43.chunk.css.map": "/memory-card-game/static/css/main.4537fb43.chunk.css.map",
+    "static/js/2.1c6e6ce0.chunk.js.LICENSE.txt": "/memory-card-game/static/js/2.1c6e6ce0.chunk.js.LICENSE.txt",
+    "static/media/001-unicorn.551bafb9.png": "/memory-card-game/static/media/001-unicorn.551bafb9.png",
+    "static/media/002-unicorn-1.22224fe1.png": "/memory-card-game/static/media/002-unicorn-1.22224fe1.png",
+    "static/media/003-unicorn-2.5d34bf85.png": "/memory-card-game/static/media/003-unicorn-2.5d34bf85.png",
+    "static/media/004-unicorn-3.d51d2456.png": "/memory-card-game/static/media/004-unicorn-3.d51d2456.png",
+    "static/media/005-unicorn-4.0e4c040b.png": "/memory-card-game/static/media/005-unicorn-4.0e4c040b.png",
+    "static/media/006-unicorn-5.f8f59cc0.png": "/memory-card-game/static/media/006-unicorn-5.f8f59cc0.png",
+    "static/media/007-unicorn-6.487e8f24.png": "/memory-card-game/static/media/007-unicorn-6.487e8f24.png",
+    "static/media/008-unicorn-7.538450fd.png": "/memory-card-game/static/media/008-unicorn-7.538450fd.png",
+    "static/media/009-unicorn-8.8781dcb4.png": "/memory-card-game/static/media/009-unicorn-8.8781dcb4.png",
+    "static/media/010-unicorn-9.6f672a5a.png": "/memory-card-game/static/media/010-unicorn-9.6f672a5a.png",
+    "static/media/011-unicorn-11.6db794ec.png": "/memory-card-game/static/media/011-unicorn-11.6db794ec.png",
+    "static/media/012-unicorn-12.0550d617.png": "/memory-card-game/static/media/012-unicorn-12.0550d617.png",
+    "static/media/013-unicorn-13.e2b490b9.png": "/memory-card-game/static/media/013-unicorn-13.e2b490b9.png",
+    "static/media/014-unicorn-14.0bc0d2b9.png": "/memory-card-game/static/media/014-unicorn-14.0bc0d2b9.png",
+    "static/media/015-unicorn-15.7a2d4492.png": "/memory-card-game/static/media/015-unicorn-15.7a2d4492.png",
+    "static/media/016-unicorn-16.9e4eaa63.png": "/memory-card-game/static/media/016-unicorn-16.9e4eaa63.png",
+    "static/media/017-unicorn-17.36d64d4b.png": "/memory-card-game/static/media/017-unicorn-17.36d64d4b.png",
+    "static/media/018-unicorn-10.be887135.png": "/memory-card-game/static/media/018-unicorn-10.be887135.png",
+    "static/media/019-unicorn-18.4e630adb.png": "/memory-card-game/static/media/019-unicorn-18.4e630adb.png",
+    "static/media/020-unicorn-19.53ee8757.png": "/memory-card-game/static/media/020-unicorn-19.53ee8757.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b80d8e1.js",
+    "static/js/2.1c6e6ce0.chunk.js",
+    "static/css/main.4537fb43.chunk.css",
+    "static/js/main.65b201b9.chunk.js"
+  ]
+}
