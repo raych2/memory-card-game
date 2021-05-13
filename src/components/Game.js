@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import unicorns from "../images/imageData";
 import Scoreboard from "./Scoreboard";
+import WinMessage from "./WinMessage";
 
 const Game = () => {
   const [currentCards, setCurrentCards] = useState(unicorns);
@@ -8,6 +9,13 @@ const Game = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [gameOver, setGameOver] = useState("");
+  const [win, setWin] = useState(false);
+
+  useEffect(() => {
+    if (currentScore === 20 && bestScore <= 20) {
+      setWin(true);
+    }
+  }, [currentScore, bestScore]);
 
   const handleClickedCards = (id) => {
     setClickedCards([...clickedCards, currentCards[id].id]);
@@ -35,7 +43,14 @@ const Game = () => {
     setCurrentCards(currentCards);
   };
 
-  return (
+  const resetGame = () => {
+    setWin(false);
+    setCurrentScore(0);
+    setBestScore(0);
+    setClickedCards([]);
+  };
+
+  return win === false ? (
     <div className="Game">
       <Scoreboard
         currentScore={currentScore}
@@ -56,6 +71,8 @@ const Game = () => {
         })}
       </div>
     </div>
+  ) : (
+    <WinMessage resetGame={resetGame} />
   );
 };
 
