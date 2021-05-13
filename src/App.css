@@ -72,3 +72,19 @@ a {
   color: #ffadad;
   text-decoration: none;
 }
+@media (max-width: 688px) {
+  .App {
+    margin: 10px;
+  }
+  .Game {
+    width: 100%;
+  }
+  .card,
+  .winning-card {
+    width: 50%;
+  }
+  img {
+    height: 50%;
+    width: 50%;
+  }
+}
